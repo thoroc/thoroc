@@ -10,7 +10,7 @@ jobs:
   achievements:
     runs-on: ubuntu-latest
     steps:
-      - uses: gh-metrics/metrics@latest
+      - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
           filename: achievements.svg
           token: ${{ secrets.METRICS_SECRET }}
@@ -26,7 +26,7 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: gh-metrics/metrics@latest
+      - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
           filename: header.svg
           # You'll need to setup a personal token in your secrets.
@@ -42,7 +42,7 @@ jobs:
   lines:
     runs-on: ubuntu-latest
     steps:
-      - uses: gh-metrics/metrics@latest
+      - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
           filename: lines-of-code.svg
           token: ${{ secrets.METRICS_SECRET }}
@@ -53,7 +53,7 @@ jobs:
   acti_comm:
     runs-on: ubuntu-latest
     steps:
-      - uses: gh-metrics/metrics@latest
+      - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
           filename: acti_comm.svg
           # You'll need to setup a personal token in your secrets.
@@ -70,7 +70,7 @@ jobs:
   iso_calender:
     runs-on: ubuntu-latest
     steps:
-      - uses: gh-metrics/metrics@latest
+      - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
           filename: iso_calender.svg
           # You'll need to setup a personal token in your secrets.
@@ -89,7 +89,7 @@ jobs:
   habits:
     runs-on: ubuntu-latest
     steps:
-      - uses: gh-metrics/metrics@latest
+      - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
           filename: github-habits.svg
           token: ${{ secrets.METRICS_SECRET }}
@@ -107,7 +107,7 @@ jobs:
   issue_pr_lang:
     runs-on: ubuntu-latest
     steps:
-      - uses: gh-metrics/metrics@latest
+      - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
           filename: issue_pr_lang.svg
           # You'll need to setup a personal token in your secrets.
@@ -127,7 +127,7 @@ jobs:
   repositories:
     runs-on: ubuntu-latest
     steps:
-      - uses: gh-metrics/metrics@latest
+      - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
           filename: repositories.svg
           # You'll need to setup a personal token in your secrets.
