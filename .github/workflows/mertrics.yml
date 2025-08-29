@@ -9,6 +9,8 @@ on:
 jobs:
   achievements:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
@@ -25,6 +27,8 @@ jobs:
 
   github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
@@ -41,6 +45,8 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
   lines:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
@@ -52,6 +58,8 @@ jobs:
 
   acti_comm:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
@@ -69,6 +77,8 @@ jobs:
 
   iso_calender:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
@@ -88,6 +98,8 @@ jobs:
 
   habits:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
@@ -106,6 +118,8 @@ jobs:
 
   issue_pr_lang:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
@@ -126,6 +140,8 @@ jobs:
 
   repositories:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: gh-metrics/metrics@31361ad6bd911ef04d835ac2b8edd1ccadcf1828
         with:
